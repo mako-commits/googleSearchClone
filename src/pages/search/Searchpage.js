@@ -13,6 +13,7 @@ import response from "../../response";
 import { useStateValue } from "../../StateProvider";
 import useGoogleSearch from "../../useGoogleSearch";
 import "./SearchPage.css";
+import Footer from "../../components/footer/Footer";
 
 function Searchpage() {
   const [{ term }, dispatch] = useStateValue();
@@ -97,6 +98,7 @@ function Searchpage() {
               <p className="searchPage__resultSnippet">{item.snippet}...</p>
             </div>
           ))}
+          {/* <Footer /> */}
         </div>
       )}
     </div>
